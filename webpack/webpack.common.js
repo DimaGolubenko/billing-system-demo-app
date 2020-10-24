@@ -3,6 +3,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const ASSET_PATH = process.env.ASSET_PATH || '/';
+
 module.exports = {
   entry: {
     app: Path.resolve(__dirname, "../src/scripts/index.js"),
@@ -10,6 +12,7 @@ module.exports = {
   output: {
     path: Path.join(__dirname, "../build"),
     filename: "js/[name].js",
+    publicPath: ASSET_PATH,
   },
   optimization: {
     splitChunks: {
