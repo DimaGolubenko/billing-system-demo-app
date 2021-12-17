@@ -1,10 +1,10 @@
 {
-  "name": "js-personal-project",
+  "name": "Billing system demo app",
   "version": "0.0.5",
-  "description": "Lectrum JS + ES6 course personal project",
+  "description": "Demo app for js skills demo",
   "author": {
-    "name": "Andrey Prisniak",
-    "email": "aprisniak@lectrum.io"
+    "name": "Dima Golubenko",
+    "email": "dimagolubenko@gmail.com"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
